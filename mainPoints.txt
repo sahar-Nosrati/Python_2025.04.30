@@ -1,0 +1,235 @@
+- application of python -> 
+  - web development (server-side),
+  - software development,
+  - mathematics,
+  - system scripting.
+
+- What python can do -> 
+  - create web application on server side 
+  - alongside software to create workflows.
+  - connect to database systems. It can also read and modify files.
+  - to handle big data and perform complex mathematics
+  - rapid prototyping, or for production-ready software development
+
+- Why python -> 
+  - works on different platforms
+  - simple syntax similar to the English language
+  - syntax that allows developers to write programs with fewer lines 
+  - contains an interpreter system
+  - procedural way, an object-oriented way or a functional way
+
+- Execute python -> 
+  - saved file with extension .py -> in CLI -> command -> python name_file.py
+  - in CLI -> command -> py -> write code -> press enter -> point -> 
+    - to exit python CLI -> exit
+
+- Indentation refers to the spaces at the beginning of a code line.
+- Python uses indentation to indicate a block of code.
+- use same indentations for script -> 
+  - Different indentations -> IndentationError: unexpected indent
+
+- command -> 
+  - single line -> #
+  - multiple lines -> """  ....  """
+- points -> Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it
+
+- variable name rules in python -> 
+  - A variable name must start with a letter or the underscore character
+  - A variable name cannot start with a number
+  - A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+  - Variable names are case-sensitive (age, Age and AGE are three different variables)
+  - A variable name cannot be any of the Python keywords.
+
+- data types -> 
+  - Text Type:	str
+  - Numeric Types:	int, float, complex
+  - Sequence Types:	list, tuple, range
+  - Mapping Type:	dict
+  - Set Types:	set, frozenset
+  - Boolean Type:	bool
+  - Binary Types:	bytes, bytearray, memoryview
+  - None Type:	NoneType
+
+- Tuple -> It is similat list but instead of squar brackets they put inside prantheses
+- Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+
+- Slicing in python -> 
+  - b = "Hello, World!"
+    print(b[2:5]) -> 2-> include, 5-> exclude
+    print(b[:5]) -> from start to 5, 5-> exclude
+    print(b[0:]) -> from start to end, 5-> exclude
+
+- Python divides the operators in the following groups -> 
+  - Arithmetic operators
+  - Assignment operators
+  - Comparison operators
+  - Logical operators
+  - Identity operators -> to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:
+  - Membership operators -> used to test if a sequence is presented in an object
+  - Bitwise operators
+
+- List -> Lists are used to store multiple items in a single variable.
+- 4 built-in data types in Python -> store collections of data, the other 3 are Tuple, Set, and Dictionary
+
+- List items are indexed, the first item has index [0], the second item has index [1] etc
+- lists are ordered -> items have a defined order, and that order will not change
+
+
+- length -> 
+  - in js -> property -> nameOfArray.length 
+  - in python -> method -> len()
+
+- create list in python -> (data type === list, define as object)
+  - list literal syntax -> []
+  - Using the list() constructor to make a List
+
+- Python Collections (Arrays) -> 
+    - List is a collection which is ordered and changeable. Allows duplicate members.
+    - Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+    - Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+    - Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+- Specify a range of indexes by specifying where to start and where to end the range -> 
+  fruits = ["apple", "banana", "cherry", "melone", "peach", "pineapple"] -> 
+  new_fruits = fruits[2:5] - index 2 -include, index 5 -> exclude
+  new_fruits = fruits[:5] - start from first element, index 5 -> exclude
+  new_fruits = fruits[2:] - start from second element,  go on to the end of the list
+
+- insert(index, "str") -> inserts an item at the specified index
+- append("str") -> add item to end of list
+- remove("str")  -> removes the first occurance specified item -> return none
+- If there are more than one item with the specified value, the remove() method removes the first occurrence
+- pop(index) -> removes the specified index. -> if index will not be provided -> remove last item -> 
+    - return removed item
+
+- del keyword -> removes the list
+
+- Loop Through the Index Numbers -> You can also loop through the list items by referring to their index number. Use the range() and len() functions to create a suitable iterable.
+
+- Looping Using List Comprehension -> 
+  thislist = ["apple", "banana", "cherry"]
+  [print(x) for x in thislist]
+
+- List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list. -> syntax -> newlist = [expression for item in iterable if condition == True]
+
+- example -> even_numbers = [2,4,6,8,10,12,14,16,64] 
+greater_than_ten_numbers = [ x for x in even_numbers if x > 10] -> output [12, 14, 16, 64]
+
+- List objects have a sort(*, rverse =bool , key=func()) method that will sort the list alphanumerically, ascending, by default ->
+  - sort(key= function, reverse =True)
+
+  - To sort descending, use the keyword argument reverse = True
+  - key parameter to specify a function to be called on each list element before comparisons. The value of the key parameter should be a function that takes a single argument and returns a key to use for sorting purposes.
+
+- built-in List method copy() to copy a list 
+- built-in method list() to copy a list 
+- copy of a list by using the : (slice) operator. -> [:]
+
+- join two lists -> 
+  - + operator 
+  - appending all the items from list2 into list1 by for loop
+  - extend() method
+
+
+- Tuples are used to store multiple items in a single variable.
+- 4 classifications of data types collections (arrays) in python in orther to storsage of several items in single variable ->
+  - list
+  - tuple
+  - set 
+  - dictionary 
+
+- To create a tuple with only one item -> you have to add a comma after the item -> 
+  - If you do not put , after value, python recognizes as string, number etc nt tuple
+
+- tuples -> 
+  - data type -> tuple
+  - definition -> object 
+
+- tuple can accept -> specify a range of indexes by specifying where to start and where to end the range of index -> return -> new tuple with the specified items
+
+-We can not create empty tuple
+
+- To determine if a specified item is present in a tuple use the in keyword
+- Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created.
+- Tuples are unchangeable, or immutable as it also is called.
+
+- change vales of tuple -> 
+  - convert tuple to list by list() -> change value -> convert to tuple by tuple()
+  - Add tuple to a tuple. You are allowed to add tuples to tuples, so if you want to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple
+
+-  "packing" a tuple -> assign valuse during create tuple
+-  unpacking a tuple -> returns values from tuple into variables
+- the number of variables === number of values in tuple
+- the number of variables !== number of values in tuple -> 
+  - use *nameof collections of other values => collection of remained values 
+
+- loop over tuple ->
+  - loop over elements
+  - loop over idex of element by range() and len()
+  - while loop 
+
+- Join Two Tuples ->
+  - + operator
+  - multiply tuples
+
+- tuple methods -> 
+  - count()	-> Returns the number of times a specified value occurs in a tuple
+  - index() -> 	Searches the tuple for a specified value and returns the first position of where it was found
+
+- Sets are used to store multiple items in a single variable.
+- A set is a collection which is unordered, unchangeable*, and unindexed.
+
+- create set -> 
+  - set literal synrtax -> {}
+  - set constructor function 
+
+- you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword
+
+- Once a set is created, you cannot change its items, but you can add new items
+
+// add new items to set
+- add ("str") -> add new items to set 
+- update([iterable]) -> add items fron one set to another -> if print it -> return none
+
+// remove items of set
+- remove ("str") -> remove items from set  -> none -> point -> if argumenr was not in set  ->
+  - Create error (key error) 
+- discard("str") -> add items fron one set to another -> if print it -> return none -> point -> if argumenr was not in set ->
+  - There is not error 
+
+
+- join methods for sets -> 
+  - union(iterable) -> return new set -> 
+      - possible substitute union() by | like all_fruits = fruits | red_fruits
+      - possible join several sets or tuple or list by union()
+      - possible join several sets or tuple or list by union()
+      - possible join several sets by union(): separation by (,) or (|)
+  - update (iterable) -> return none -> first set contains all values of two sets
+  - intersection([iterable]) -> common elements between two sets
+      - possible substitute intersection() by & like all_fruits = fruits & red_fruits
+  - difference([iterable]) -> return new set of kept non-repeatitive elements of frist set from other sets
+      - (-) operator instead of the difference() method
+  - difference_update([iterable]) -> like difference but change first set (not new set) 
+  - symmetric_difference([iterable]) -> returns all elements except repeatitive elements in new set
+      - (^) operator instead of the symmetric_difference()
+  - symmetric_difference_update() like symmetric_difference([iterable]) but return in place first set not new set
+
+- Dictionaries are used to store data values in key:value pairs.
+- A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+- Dictionary items are ordered, changeable, and do not allow duplicates.
+- When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change.
+
+- access to key-value in dictionary -> 
+  - ["name of key"]
+  - get() 
+
+- get kes, values and key-values -> 
+  - keys() -> Return a set-like object providing a view on the dict's keys
+  - values() -> Return an object providing a view on the dict's values
+  - items() -> set-like object providing a view on the dict's items.
+
+- presence specified key in dict -> 
+  - in key word 
+
+- update() -> update the dictionary with the items from the given argument 
+  - argument should be iterable object or a dictionary
